@@ -1,4 +1,4 @@
-package com.example.sanmart.host;
+package com.republic.sanmart.host;
 
 import io.flutter.embedding.android.FlutterActivity;
 
