@@ -1,6 +1,6 @@
 def flutterPluginVersion = 'managed'
 
-apply plugin: 'com.android.application'4
+apply plugin: 'com.android.application'
 
 def keystoreProperties = new Properties()
    def keystorePropertiesFile = rootProject.file('key.properties')
