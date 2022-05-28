@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.only(top: 5.0),
+          padding: EdgeInsets.only(top: 20.0),
           child: WebviewScaffold(
             url: url,
             withLocalStorage: true,

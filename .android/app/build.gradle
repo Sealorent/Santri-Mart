@@ -1,12 +1,13 @@
 def flutterPluginVersion = 'managed'
 
-apply plugin: 'com.android.application'4
+apply plugin: 'com.android.application'
 
-def keystoreProperties = new Properties()
+ def keystoreProperties = new Properties()
    def keystorePropertiesFile = rootProject.file('key.properties')
    if (keystorePropertiesFile.exists()) {
        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
    }
+
 
 android {
     compileSdkVersion 31
@@ -20,11 +21,11 @@ android {
         applicationId "com.republic.sanmart.host"
         minSdkVersion 21
         targetSdkVersion 31
-        versionCode 1
-        versionName "1.0"
+        versionCode 6
+        versionName "6.0"
     }
 
-    signingConfigs {
+   signingConfigs {
        release {
            keyAlias keystoreProperties['keyAlias']
            keyPassword keystoreProperties['keyPassword']
